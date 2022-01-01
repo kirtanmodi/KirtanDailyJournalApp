@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/blogDB');
+mongoose.connect('mongodb+srv://admin-kirtan:test123@blogwebsitejs.f3an7.mongodb.net/kirtanBlogWebsiteJs?retryWrites=true&w=majority');
 
 const blogsSchema = {
   title: String,
